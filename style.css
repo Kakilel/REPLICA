@@ -1,5 +1,5 @@
 *{
-   
+
     padding: 0;
     box-sizing: border-box;
   }
@@ -11,6 +11,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #fff;
     color: #333;
+    
   }
   
   header {
@@ -21,7 +22,7 @@ body {
     
   }
   
-  nav {
+  .nav-main {
     display: flex;
     justify-content: space-around
     align-items: center;
@@ -44,7 +45,7 @@ body {
     position: absolute;
     }
   .nav-links {
-    position: inherit;
+   
     list-style: none;
     display:flex;
     justify-content: space-around;
@@ -121,13 +122,47 @@ body {
     background: #eee;
     text-align: center;
   }
-  
+  /*************************FOOOTER**********************************************************************************************************************************************************************************/
   footer {
     text-align: center;
-    padding: 20px;
-    background: #1e2a38;
+    padding: 50px 15px 30px;
+    background: #d8d8d8;
     color: white;
-  }
+    
+
+   }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+    }
+    .footer-links a {
+      text-decoration: solid;
+      color:#53565A;
+      font-weight: bold;
+      font-size: 16px;
+      }
+      .footer-words {
+        margin-left: 15%;
+        text-align: start;
+        display: block;
+        max-width: 1000px;
+        
+      }
+      
+    
+      
+      footer p{
+        color: #53565A;
+        font-weight: 670;
+        font-size: 14px;
+        display: inline-block;
+       
+      } 
   .menu-icon {
     display: none;
   }
@@ -141,36 +176,45 @@ body {
   }
   .nav-links {
     margin-left: -2%;
-    gap: 1px;
     display: none;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin-bottom: 1%;
+    flex-direction: column;
+   
   }
    
 
    .menu-icon{
     display: block;
-    margin-left:%;
-   position: absolute;
-   font-size: 30px;
+    position: absolute;
+    font-size: 30px;
+    margin-bottom: -2%;
 }
    .menu-icon:hover + .nav-links{
-          display: block;
+          display: flex;
+          margin-bottom: auto;
    }
    .nav-links:hover{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 1s;
+    
 }
 .menu-icon:has( +.nav-links:hover) {
   display: none;
+  
 }
 .menu-icon:hover{
   display: none;
  } 
  .nav-links:hover + .logo{
   display: none;
+
 }
 .nav-links:hover +.logo + .cart{
   display: none;
+  transition: 1s;
+}
 }
   
   
