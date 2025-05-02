@@ -17,7 +17,7 @@ body {
   header {
     background: #006a94;
     color: white;
-    
+    position: relative;
     padding: 0%;
     
   }
@@ -165,6 +165,20 @@ body {
       } 
   .menu-icon {
     display: none;
+  }
+  .icons{
+    font-size: 30px;
+  }
+  .about{
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 10%;
+    border: 0px solid gray;
+    background-color: #eaebec;
+    max-width: 1200px;
   }
 @media only screen and (max-width: 640px) {
   .logo{
